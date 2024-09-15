@@ -14,7 +14,6 @@ const Row = styled.div`
       flex-direction: column;
       gap: 1.6rem;
     `}
-  ${(props) => console.log(props)}
 `;
 
 Row.defaultProps = {
