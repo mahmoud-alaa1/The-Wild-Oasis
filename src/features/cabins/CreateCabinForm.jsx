@@ -14,13 +14,12 @@ function CreateCabinForm({ cabinToEdit = {} }) {
 
   const { isEditing, editCabin } = useEditCabin();
 
+  const { id: editId, ...editValues } = cabinToEdit;
+  const isEditSession = Boolean(editId);
+
   const { register, handleSubmit, reset, formState, getValues } = useForm({
     defaultValues: isEditSession ? editValues : {},
   });
-
-  const { id: editId, ...editValues } = cabinToEdit;
-
-  const isEditSession = Boolean(editId);
 
   const { errors } = formState;
 

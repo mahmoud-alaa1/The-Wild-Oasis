@@ -82,7 +82,7 @@ function CabinRow({ cabin }) {
           <span>&mdash;</span>
         )}
         <div>
-          <button>
+          <button disabled={isCreating} onClick={handleDuplicate}>
             <HiSquare2Stack />
           </button>
           <button onClick={() => setShowForm(!showForm)} disabled={isDeleteing}>
