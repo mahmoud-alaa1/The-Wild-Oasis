@@ -31,7 +31,12 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
     if (isEditSession)
       updateCabin(
         { newCabinData: { ...data, image }, id: editId },
-        { onSuccess: () => reset() }
+        {
+          onSuccess: () => {
+            reset();
+            onCloseModal?.();
+          },
+        }
       );
     else
       createCabin(
@@ -98,7 +103,6 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
           {...register("discount", {
             required: "This field is required",
             validate: (value) => {
-              console.log(value);
               return (
                 parseInt(value) < parseInt(getValues("regularPrice")) ||
                 "The discount should be less than the value"
