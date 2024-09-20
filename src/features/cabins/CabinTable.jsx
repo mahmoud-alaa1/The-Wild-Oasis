@@ -51,10 +51,10 @@ function CabinTable() {
   let [field, direction] = sortValue.split("-");
   direction = direction == "asc" ? 1 : -1;
   const sortedCabins = filteredCabins.sort((a, b) => {
-    return a[field].localeCompare(b[field]) * direction;
+    if (typeof a[field] === "number") return (a[field] - b[field]) * direction;
+    else return a[field].localeCompare(b[field]) * direction;
   });
 
-  console.log(sortedCabins);
 
   return (
     <Menus>
