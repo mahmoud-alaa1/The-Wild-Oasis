@@ -5,6 +5,7 @@ import useCabins from "./useCabins";
 import Table from "../../ui/Table";
 import Menus from "../../ui/Menus";
 import { useSearchParams } from "react-router-dom";
+import Empty from "../../ui/Empty";
 // const Table = styled.div`
 //   border: 1px solid var(--color-grey-200);
 //   font-size: 1.4rem;
@@ -37,6 +38,8 @@ function CabinTable() {
 
   if (isLoading) return <Spinner />;
 
+  if (!cabins.length) return <Empty resourceName={"cabins"} />;
+
   let filteredCabins = cabins;
 
   //1) Filter
@@ -54,7 +57,6 @@ function CabinTable() {
     if (typeof a[field] === "number") return (a[field] - b[field]) * direction;
     else return a[field].localeCompare(b[field]) * direction;
   });
-
 
   return (
     <Menus>
