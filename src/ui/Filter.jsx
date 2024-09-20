@@ -40,10 +40,10 @@ function Filter({ filterField, options }) {
 
   if (!filterField || !options) return null;
 
-  const currentFilter = searchParams.get("discount") || options.at(0).value;
+  const currentFilter = searchParams.get(filterField) || options.at(0).value;
 
   function handleClick(value) {
-    searchParams.set("discount", value);
+    searchParams.set(filterField, value);
     setSearchParams(searchParams);
   }
 
@@ -53,7 +53,7 @@ function Filter({ filterField, options }) {
         <FilterButton
           onClick={() => handleClick(option.value)}
           key={option.value}
-          active={currentFilter == option.value? "1" : ''}
+          active={currentFilter == option.value ? "1" : ""}
           disabled={currentFilter == option.value}
         >
           {option.label}
