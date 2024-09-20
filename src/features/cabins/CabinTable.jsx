@@ -39,21 +39,23 @@ function CabinTable() {
 
   let filteredCabins = cabins;
 
+  //1) Filter
   if (filterValue == "with-discount") {
     filteredCabins = cabins.filter((cabin) => cabin.discount > 0);
   } else if (filterValue == "no-discount") {
     filteredCabins = cabins.filter((cabin) => cabin.discount === 0);
   }
 
-  //sort
-  const sortValue = searchParams.get("sortBy") || "startDate-asc";
+  //2) Sort
+  const sortValue = searchParams.get("sortBy") || "created_at-asc";
   let [field, direction] = sortValue.split("-");
   direction = direction == "asc" ? 1 : -1;
   const sortedCabins = filteredCabins.sort((a, b) => {
-    console.log((a[field] - b[field]) * direction);
-    return (a[field] - b[field]) * direction;
+    return a[field].localeCompare(b[field]) * direction;
   });
+
   console.log(sortedCabins);
+
   return (
     <Menus>
       <Table role="table" columns="0.6fr 1.8fr 2.2fr 1fr 1fr 1fr">
