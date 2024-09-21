@@ -11,7 +11,7 @@ function useLogin() {
     onSuccess: (user) => {
       console.log(user);
       toast.success("Welcome Mr. A7a");
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
     },
     onError: (err) => {
       console.error("ERROR", err);

@@ -31,7 +31,7 @@ function LoginForm() {
       </FormRowVertical>
       <FormRowVertical label="Password">
         <Input
-          type="text"
+          type="password"
           id="password"
           autoComplete="current-password"
           value={password}
