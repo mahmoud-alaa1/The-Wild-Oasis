@@ -35,7 +35,7 @@ const FilterButton = styled.button`
   }
 `;
 
-function Filter({ filterField, options }) {
+function Filter({ filterField, options, searchParamsToReset = [] }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
   if (!filterField || !options) return null;
@@ -44,7 +44,9 @@ function Filter({ filterField, options }) {
 
   function handleClick(value) {
     searchParams.set(filterField, value);
-    searchParams.set("page", 1);
+    searchParamsToReset?.map((param) =>
+      searchParams.set(param.name, param.value)
+    );
     setSearchParams(searchParams);
   }
 
