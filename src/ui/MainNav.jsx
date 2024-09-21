@@ -1,13 +1,10 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {
-  HiCalendar,
-  HiOutlineCalendar,
   HiOutlineCalendarDays,
   HiOutlineCog6Tooth,
   HiOutlineHome,
   HiOutlineHomeModern,
-  HiOutlineUser,
   HiOutlineUsers,
 } from "react-icons/hi2";
 

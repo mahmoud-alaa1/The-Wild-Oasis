@@ -12,7 +12,7 @@ import { useMoveBack } from "../../hooks/useMoveBack";
 import useBooking from "./useBooking";
 import { useNavigate } from "react-router-dom";
 import useCheckout from "../check-in-out/useCheckout";
-
+import DeleteBookingModal from "./DeleteBookingModal";
 const HeadingGroup = styled.div`
   display: flex;
   gap: 2.4rem;
@@ -51,9 +51,7 @@ function BookingDetail() {
 
       <ButtonGroup>
         {status == "unconfirmed" && (
-          <Button
-            onClick={() => navigate(`/checkin/${bookingId}`, { replace: true })}
-          >
+          <Button onClick={() => navigate(`/checkin/${bookingId}`)}>
             Check in
           </Button>
         )}
@@ -62,6 +60,7 @@ function BookingDetail() {
             Check out
           </Button>
         )}
+        <DeleteBookingModal bookingId={bookingId} />
         <Button variation="secondary" onClick={moveBack}>
           Back
         </Button>
