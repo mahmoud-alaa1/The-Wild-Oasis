@@ -16,7 +16,7 @@ function ProtectedRoute({ children }) {
   const navigate = useNavigate();
   //1. Load the Authenticated user
 
-  const { fetchStatus, isPending, isAuthenticated } = useUser();
+  const { isPending, isAuthenticated } = useUser();
 
   //2 while loading, show a spinner
 
