@@ -20,13 +20,6 @@ function ProtectedRoute({ children }) {
 
   //2 while loading, show a spinner
 
-  // 3if there is no auth user, redirect to the login page
-
-  useEffect(() => {
-    if (!isAuthenticated && !isPending && fetchStatus !== "fetching")
-      navigate("/login");
-  }, [isAuthenticated, isPending, navigate, fetchStatus]);
-
   if (isPending)
     return (
       <FullPage>
@@ -34,7 +27,12 @@ function ProtectedRoute({ children }) {
       </FullPage>
     );
 
+  //3 no user isn't allowed to enter app
+
+  if (!isAuthenticated) navigate("/login");
+
   //4 if there is a user render the app
+
   if (isAuthenticated) return children;
 }
 
