@@ -8,7 +8,7 @@ function useBooking() {
     isPending,
     error,
   } = useQuery({
-    queryKey: ["booking"],
+    queryKey: ["booking",bookingId],
     queryFn: () => getBooking(bookingId),
     retry: false,
   });
