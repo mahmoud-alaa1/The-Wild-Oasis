@@ -14,8 +14,8 @@ function useLogin() {
       navigate("/dashboard");
     },
     onError: (err) => {
-      console.err(err.message);
-      toast.error("Provided email or passowrd are incorrect");
+      console.error("ERROR", err);
+      toast.error("Provided email or password are incorrect");
     },
   });
   return { login, isLogging };
