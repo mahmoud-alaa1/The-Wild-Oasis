@@ -79,7 +79,7 @@ function SalesChart({ bookings, numDays }) {
           />
           <Tooltip
             contentStyle={{ backgroundColor: colors.background }}
-            animationDuration={100}
+            animationDuration={200}
           />
           <Area
             dataKey="totalSales"
@@ -89,6 +89,7 @@ function SalesChart({ bookings, numDays }) {
             strokeWidth={3}
             name="Total Sales"
             unit={`$`}
+            animationDuration={500}
           />
           <Area
             dataKey="extrasSales"
@@ -98,6 +99,7 @@ function SalesChart({ bookings, numDays }) {
             strokeWidth={3}
             name="Extras Sales"
             unit={`$`}
+            animationDuration={500}
           />
         </AreaChart>
       </ResponsiveContainer>
