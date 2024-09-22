@@ -12,17 +12,12 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import {
-  eachDayOfInterval,
-  format,
-  isSameDay,
-  subDays,
-} from "date-fns";
+import { eachDayOfInterval, format, isSameDay, subDays } from "date-fns";
 
 const StyledSalesChart = styled(DashboardBox)`
   grid-column: 1 / -1;
 
-  height: auto;
+  height: fit-content;
 
   /* Hack to change grid line colors */
   & .recharts-cartesian-grid-horizontal line,
@@ -30,7 +25,6 @@ const StyledSalesChart = styled(DashboardBox)`
     stroke: var(--color-grey-300);
   }
 `;
-
 
 function SalesChart({ bookings, numDays }) {
   const { isDarkMode } = useDarkMode();
@@ -83,7 +77,10 @@ function SalesChart({ bookings, numDays }) {
             tick={{ fill: colors.text }}
             tickLine={{ fill: colors.text }}
           />
-          <Tooltip contentStyle={{ backgroundColor: colors.background }} />
+          <Tooltip
+            contentStyle={{ backgroundColor: colors.background }}
+            animationDuration={100}
+          />
           <Area
             dataKey="totalSales"
             type="monotone"
