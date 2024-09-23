@@ -25,7 +25,7 @@ const StyledFormRow = styled.div`
     justify-content: flex-end;
     gap: 1.2rem;
   }
-  @media ${"(max-width: 350px)"} {
+  @media ${"(max-width: 460px)"} {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -34,6 +34,12 @@ const StyledFormRow = styled.div`
 
 const Label = styled.label`
   font-weight: 500;
+`;
+const LabelContainer = styled.div`
+  width: 250px;
+  @media ${device.mobileM} {
+    width: fit-content;
+  }
 `;
 
 const Error = styled.span`
@@ -45,9 +51,9 @@ function FormRow({ label, error, children }) {
   return (
     <StyledFormRow>
       {label && (
-        <div style={{ width: `250px` }}>
+        <LabelContainer>
           <Label htmlFor={children.props.id}>{label}</Label>
-        </div>
+        </LabelContainer>
       )}
       {children}
       {error && <Error>{error}</Error>}

@@ -10,6 +10,7 @@ function CheckoutButton({ bookingId }) {
       size="small"
       onClick={() => checkout(bookingId)}
       disabled={isCheckingOut}
+      style={{ width: "fit-content" }}
     >
       Check out
     </Button>

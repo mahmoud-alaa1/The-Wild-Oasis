@@ -8,12 +8,21 @@ import useCabins from "../cabins/useCabins";
 import SalesChart from "./SalesChart";
 import DurationChart from "./DurationChart";
 import TodayActivity from "../check-in-out/TodayActivity";
+import { device } from "../../utils/constants";
 const StyledDashboardLayout = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 34rem auto;
+  display: flex;
+  flex-direction: column;
   gap: 2.4rem;
 `;
+
+const TodayActivityAndDurationContainer = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  @media ${device.laptop} {
+    flex-direction: column;
+  }
+`;
+
 function DashboardLayout() {
   const { bookings, isPending: isPendingBookings } = useRecentBookings();
 
@@ -36,8 +45,10 @@ function DashboardLayout() {
         numDays={numdDays}
         cabinCount={cabins.length}
       />
-      <TodayActivity />
-      <DurationChart confirmedStays={confirmedStays} />
+      <TodayActivityAndDurationContainer>
+        <TodayActivity />
+        <DurationChart confirmedStays={confirmedStays} />
+      </TodayActivityAndDurationContainer>
       <SalesChart bookings={bookings} numDays={numdDays} />
     </StyledDashboardLayout>
   );

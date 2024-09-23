@@ -10,11 +10,10 @@ const StyledAppLayout = styled.div`
 
 const Main = styled.main`
   background-color: var(--color-grey-50);
-  padding: 2rem;
+  padding: 4rem;
 `;
 
 const Contaienr = styled.div`
-  max-width: 120rem;
   margin: auto;
   display: flex;
   flex-direction: column;

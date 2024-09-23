@@ -88,11 +88,11 @@ function SignupForm() {
 
       <FormRow>
         {/* type is an HTML attribute! */}
-        <Button disabled={isPending}>
-          {isPending ? <SpinnerMini /> : "Create new user"}
-        </Button>
         <Button variation="secondary" type="reset">
           Reset
+        </Button>
+        <Button disabled={isPending}>
+          {isPending ? <SpinnerMini /> : "Create new user"}
         </Button>
       </FormRow>
     </Form>

@@ -25,7 +25,7 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
   );
 
   return (
-    <>
+    <div className="a7a" style={{ display: "flex", flexWrap: "wrap" }}>
       <Stat
         title={`bookings`}
         color={"blue"}
@@ -50,7 +50,7 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
         icon={<HiOutlineChartBar />}
         value={`${occupation}%`}
       />
-    </>
+    </div>
   );
 }
 

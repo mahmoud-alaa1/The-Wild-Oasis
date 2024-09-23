@@ -8,19 +8,20 @@ const Row = styled.div`
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 1rem;
     `}
 
   ${(props) =>
     props.type === "vertical" &&
     css`
       flex-direction: column;
-      gap: 1.6rem;
+      gap: ${props.gap};
     `}
 `;
 
 Row.defaultProps = {
   type: "vertical",
+  gap: "1.6rem",
 };
 
 export default Row;

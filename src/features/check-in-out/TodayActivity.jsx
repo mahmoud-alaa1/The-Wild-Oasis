@@ -5,6 +5,7 @@ import Row from "../../ui/Row";
 import useTodayActivity from "./useTodayActivity";
 import Spinner from "../../ui/Spinner";
 import TodayItem from "./TodayItem";
+import { device } from "../../utils/constants";
 
 const StyledToday = styled.div`
   /* Box */
@@ -14,9 +15,9 @@ const StyledToday = styled.div`
 
   padding: 3.2rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 2.4rem;
-  grid-column: 1 / span 2;
   padding-top: 2.4rem;
 `;
 
@@ -29,6 +30,11 @@ const NoActivity = styled.p`
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 0.8rem;
+
+  @media ${device.laptopL} {
+    width: 100%;
+  }
+
 `;
 
 function TodayActivity() {

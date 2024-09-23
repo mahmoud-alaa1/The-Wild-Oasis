@@ -53,11 +53,11 @@ function UpdatePasswordForm() {
         />
       </FormRow>
       <FormRow>
-        <Button onClick={reset} type="reset" variation="secondary">
-          Reset
-        </Button>
         <Button disabled={isUpdating}>
           {isUpdating ? <SpinnerMini /> : "Update password"}
+        </Button>
+        <Button onClick={reset} type="reset" variation="secondary">
+          Reset
         </Button>
       </FormRow>
     </Form>

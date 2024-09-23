@@ -15,7 +15,6 @@ import {
 import { eachDayOfInterval, format, isSameDay, subDays } from "date-fns";
 
 const StyledSalesChart = styled(DashboardBox)`
-  grid-column: 1 / -1;
 
   height: fit-content;
 

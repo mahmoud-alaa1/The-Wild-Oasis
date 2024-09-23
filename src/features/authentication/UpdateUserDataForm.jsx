@@ -68,11 +68,11 @@ function UpdateUserDataForm() {
         />
       </FormRow>
       <FormRow>
-        <Button onClick={handleReset} type="reset" variation="secondary">
-          Reset
-        </Button>
         <Button disabled={isUpdating}>
           {isUpdating ? <SpinnerMini /> : "Update account"}
+        </Button>
+        <Button onClick={handleReset} type="reset" variation="secondary">
+          Reset
         </Button>
       </FormRow>
     </Form>

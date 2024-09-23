@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { device } from "../utils/constants";
 
 const Heading = styled.h1`
   ${(props) =>
@@ -26,6 +27,10 @@ const Heading = styled.h1`
       font-weight: 400;
     `}
   line-height:1.4;
+  padding: 0.8rem 0;
+  @media ${device.mobileL} {
+    padding: 2rem;
+  }
 `;
 
 export default Heading;
