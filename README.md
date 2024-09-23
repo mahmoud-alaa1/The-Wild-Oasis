@@ -6,7 +6,7 @@ Welcome to The Wild Oasis! This is a hotel management web app, where hotel emplo
 You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/).
 
 - Landing Page
-![image](https://github.com/user-attachments/assets/0f329b3f-4107-49f2-bd34-aca5c586c898)
+![image](https://github.com/user-attachments/assets/6e0208b8-5183-49f3-80ca-8d35ce73c310)
 
   
 
