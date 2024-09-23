@@ -13,9 +13,9 @@ const StyledHeader = styled.header`
   justify-content: space-between;
 `;
 
-function Header({ sideBarRef }) {
+function Header({ sidebarRef }) {
   function openSideBar() {
-    sideBarRef.current.style.transform = "translateX(0)";
+    sidebarRef.current.style.transform = "translateX(0)";
   }
 
   return (

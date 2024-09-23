@@ -14,7 +14,6 @@ const StyledSidebar = styled.aside`
   flex-direction: column;
   gap: 3.2rem;
   transition: 0.3s ease-in-out;
-  height: 100vh;
   @media ${device.laptop} {
     position: absolute;
     transform: translateX(-100%);
@@ -23,11 +22,19 @@ const StyledSidebar = styled.aside`
   overflow: auto;
 `;
 
-function SideBar({ sideBarRef }) {
-  console.log(device.laptop);
+function SideBar({ sidebarRef }) {
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > Number(size.laptop)) {
+        sidebarRef.current.style = "";
+      }
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <StyledSidebar ref={sideBarRef}>
-      <CloseSideBar sideBarRef={sideBarRef} />
+    <StyledSidebar ref={sidebarRef}>
+      <CloseSideBar sidebarRef={sidebarRef} />
       <Logo />
       <MainNav />
       {/* <Uploader /> */}

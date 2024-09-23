@@ -13,9 +13,9 @@ const StyledCloseSideBar = styled(ButtonIcon)`
   }
 `;
 
-function CloseSideBar({ sideBarRef }) {
+function CloseSideBar({ sidebarRef }) {
   function handleCloseSideBar() {
-    sideBarRef.current.style.transform = "translateX(-100%)";
+    sidebarRef.current.style.transform = "translateX(-100%)";
   }
 
   return (

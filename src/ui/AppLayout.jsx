@@ -28,13 +28,13 @@ const AppContainer = styled.div`
   flex-direction: column;
 `;
 function AppLayout() {
-  const sideBarRef = useRef(null);
+  const sidebarRef = useRef(null);
 
   return (
     <StyledAppLayout>
-      <SideBar sideBarRef={sideBarRef} />
+      <SideBar sidebarRef={sidebarRef} />
       <AppContainer>
-        <Header sideBarRef={sideBarRef} />
+        <Header sidebarRef={sidebarRef} />
         <Main style={{ flexGrow: 1 }}>
           <Contaienr>
             <Outlet />
