@@ -1,14 +1,12 @@
 # 🏜️ The Wild Oasis
 
-The Wild Oasis is a full-stack React project showcasing my skills in modern web development. This app demonstrates my ability to build scalable, user-centric applications with advanced features and a clean, professional architecture. It includes powerful functionalities like authentication, real-time data interaction, and visualizations, wrapped in an intuitive, responsive UI with dark mode support.
+Welcome to The Wild Oasis! This is a hotel management web app, where hotel employees can manage cabins, bookings, and guests. It uses Supabase as the backend and implements advanced React techniques such as HOCs and React Query.
 
 # 🖥️ Demo
 You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/).
 
-![image](https://github.com/user-attachments/assets/172917e2-bbc4-49ae-b650-48e5f441f794)
-![image](https://github.com/user-attachments/assets/fb428bd7-b320-4860-85a6-3c2134abde20)
-![image](https://github.com/user-attachments/assets/0001dd9a-647c-4112-b247-e6fbfb93d536)
-![image](https://github.com/user-attachments/assets/3ad4c465-0c1f-44ea-98db-7d96fd1a1248)
+- Landing Page
+![image](https://github.com/user-attachments/assets/0f329b3f-4107-49f2-bd34-aca5c586c898)
 
   
 
