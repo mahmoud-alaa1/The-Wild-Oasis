@@ -15,14 +15,14 @@ You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/)
 # 🚀 Key Technologies
 
 
-- <img src="https://github.com/user-attachments/assets/4579643d-5b77-4e0b-b320-be205fc587da" width="30" height="30">  React Query: Efficient data fetching and caching.
+- <img src="https://github.com/user-attachments/assets/4579643d-5b77-4e0b-b320-be205fc587da" width="20" height="20">  React Query: Efficient data fetching and caching.
 
-- <img src="https://github.com/user-attachments/assets/078dec5d-c427-4d18-b72c-c36b28491721" width="30" height="30">  Styled Components: Modular and scalable component styling.
+- <img src="https://github.com/user-attachments/assets/078dec5d-c427-4d18-b72c-c36b28491721" width="20" height="20">  Styled Components: Modular and scalable component styling.
 
 
-- <img src="https://github.com/user-attachments/assets/da054759-56f1-40c1-abac-34ab9e73e1c7" width="30" height="30">  React Hook Form: Simple, powerful form handling
+- <img src="https://github.com/user-attachments/assets/da054759-56f1-40c1-abac-34ab9e73e1c7" width="20" height="20">  React Hook Form: Simple, powerful form handling
 
-- <img src="https://github.com/user-attachments/assets/ec9eda63-db63-4f73-99d5-931a1d340659" width="30" height="30">  Supabase: Authentication and real-time database.
+- <img src="https://github.com/user-attachments/assets/ec9eda63-db63-4f73-99d5-931a1d340659" width="20" height="20">  Supabase: Authentication and real-time database.
 
 - 🏗️ The Compound Component Pattern: Maintainable UI components.
 
