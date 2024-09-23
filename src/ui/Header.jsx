@@ -11,6 +11,11 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  @media ${"(max-width: 420px)"} {
+    flex-direction: column;
+  }
 `;
 
 function Header({ sidebarRef }) {
@@ -20,15 +25,11 @@ function Header({ sidebarRef }) {
 
   return (
     <StyledHeader>
-      <Row>
-        <OpenSideMenu onClick={openSideBar}>
-          <HiMenu />
-        </OpenSideMenu>
-      </Row>
-      <Row type="horizontal">
-        <UserAvatar />
-        <HeaderMenu />
-      </Row>
+      <OpenSideMenu onClick={openSideBar}>
+        <HiMenu />
+      </OpenSideMenu>
+      <UserAvatar />
+      <HeaderMenu />
     </StyledHeader>
   );
 }
