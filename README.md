@@ -50,7 +50,7 @@ Every feature of The Wild Oasis was designed with one simple question in mind: "
 
 
 ## 🤝 🏖️ Contribute to the Oasis
-We welcome contributions! Feel free to submit issues, pull requests or emailing me [Mahmoud Alaa](mailto:mahmoud.alaa.dev1@gmail.com?subject=[GitHub]%20Wild%20Oasis) to improve WILD OASIS.
+We're excited for you to be a part of this journey. Whether you're fixing a bug or building new features, your contribution will help keep The Wild Oasis flourishing. Feel free to submit issues, pull requests or emailing me [Mahmoud Alaa](mailto:mahmoud.alaa.dev1@gmail.com?subject=[GitHub]%20Wild%20Oasis)
 
 
 
