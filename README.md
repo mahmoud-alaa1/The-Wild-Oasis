@@ -86,7 +86,7 @@ The dashboard provides real-time insights into:
 
 
 ## 🤝 Contributing
-We welcome contributions! Feel free to submit issues, pull requests or emailing me [Mahmoud Alaa](mailto:mahmoud.alaa.dev1@gmail.com?subject=[GitHub]%20Wild%20Oasis). to help improve Wild Oasis.
+We welcome contributions! Feel free to submit issues, pull requests or emailing me [Mahmoud Alaa](mailto:mahmoud.alaa.dev1@gmail.com?subject=[GitHub]%20Wild%20Oasis) to improve WILD OASIS.
 
 
 ## 🖐️ finally
