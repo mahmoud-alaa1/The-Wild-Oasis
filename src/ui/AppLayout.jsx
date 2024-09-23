@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import SideBar from "./SideBar";
 import styled from "styled-components";
+import { useRef } from "react";
 const StyledAppLayout = styled.div`
   display: flex;
   height: 100vh;
@@ -27,11 +28,13 @@ const AppContainer = styled.div`
   flex-direction: column;
 `;
 function AppLayout() {
+  const sideBarRef = useRef(null);
+
   return (
     <StyledAppLayout>
-      <SideBar />
+      <SideBar sideBarRef={sideBarRef} />
       <AppContainer>
-        <Header />
+        <Header sideBarRef={sideBarRef} />
         <Main style={{ flexGrow: 1 }}>
           <Contaienr>
             <Outlet />

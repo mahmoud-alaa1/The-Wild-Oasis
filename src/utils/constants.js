@@ -1,13 +1,14 @@
 export const PAGE_SIZE = 10;
-const size = {
+export const size = {
   mobileS: "320px",
   mobileM: "375px",
   mobileL: "425px",
   tablet: "768px",
-  laptop: "1024px",
+  laptop: "1050px",
   laptopL: "1440px",
   desktop: "2560px",
 };
+
 export const device = {
   mobileS: `(max-width: ${size.mobileS})`,
   mobileM: `(max-width: ${size.mobileM})`,

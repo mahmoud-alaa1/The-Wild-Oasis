@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import HeaderMenu from "./HeaderMenu";
 import UserAvatar from "../features//authentication/UserAvatar";
-import ButtonIcon from "./ButtonIcon";
 import { HiMenu } from "react-icons/hi";
 import Row from "../ui/Row";
+import OpenSideMenu from "./OpenSideMenu";
 const StyledHeader = styled.header`
   background-color: var(--color-grey-0);
   padding: 1.2rem 4.8rem;
@@ -13,13 +13,17 @@ const StyledHeader = styled.header`
   justify-content: space-between;
 `;
 
-function Header() {
+function Header({ sideBarRef }) {
+  function openSideBar() {
+    sideBarRef.current.style.transform = "translateX(0)";
+  }
+
   return (
     <StyledHeader>
       <Row>
-        <ButtonIcon>
+        <OpenSideMenu onClick={openSideBar}>
           <HiMenu />
-        </ButtonIcon>
+        </OpenSideMenu>
       </Row>
       <Row type="horizontal">
         <UserAvatar />

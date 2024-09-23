@@ -3,6 +3,10 @@ import Logo from "./Logo";
 import MainNav from "./MainNav";
 import Uploader from "../data/Uploader";
 import { device } from "../utils/constants";
+import { size } from "../utils/constants";
+import { useOutsideClick } from "../hooks/useOutsideClick";
+import CloseSideBar from "./CloseSideBar";
+import { useEffect } from "react";
 const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);
   padding: 3.2rem 4rem;
@@ -16,12 +20,14 @@ const StyledSidebar = styled.aside`
     position: absolute;
     transform: translateX(-100%);
   }
+
   overflow: auto;
 `;
 
-function SideBar() {
+function SideBar({ sideBarRef }) {
   return (
-    <StyledSidebar>
+    <StyledSidebar ref={sideBarRef}>
+      <CloseSideBar sideBarRef={sideBarRef} />
       <Logo />
       <MainNav />
       {/* <Uploader /> */}
