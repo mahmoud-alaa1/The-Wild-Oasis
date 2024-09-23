@@ -30,7 +30,7 @@ function SideBar({ sidebarRef }) {
       }
     }
     window.addEventListener("resize", handleResize);
-  }, []);
+  }, [sidebarRef]);
 
   return (
     <StyledSidebar ref={sidebarRef}>
