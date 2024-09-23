@@ -2,6 +2,15 @@
 
 Wild Oasis is a powerful, user-friendly dashboard designed to help you manage hotels, resorts, or cabin rentals with ease. Whether you manage a small number of cabins or a large property, Wild Oasis provides all the tools you need to handle bookings, guests, and daily operations effectively.
 
+## 🖥️ Demo
+You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/).
+
+![image](https://github.com/user-attachments/assets/31a32b69-3e05-4d09-ac12-fede0cdb50e3)
+![image](https://github.com/user-attachments/assets/d35745ba-b109-4a59-90be-cbd8f3802c35)
+![image](https://github.com/user-attachments/assets/da1e7180-745b-4da3-918b-ecd0f64d3c40)
+![image](https://github.com/user-attachments/assets/9ec4ead5-f80c-43e6-ab1e-bf7eadeae4d3)
+
+
 ## ✨ Features
 - Unlimited Cabin Management: Easily add, update, or remove as many cabins as you need. Wild Oasis grows with your business, making it perfect for properties of any size.
 - Complete Booking System: Manage guest bookings from start to finish. Handle check-ins, check-outs, cancellations, and view booking details all in one place.
@@ -11,9 +20,6 @@ Wild Oasis is a powerful, user-friendly dashboard designed to help you manage ho
 - Dark Mode Option: Enjoy a comfortable user experience with both light and dark mode options for different work environments
 - Responsive Design: Manage your hotel on any device—desktop, tablet, or mobile.
   
-## 🖥️ Demo
-You can check **live website** [World Wise](https://world-wise1.vercel.app/).
-
 
 
 
@@ -36,16 +42,16 @@ password: 12345678
 ## 📦 Installation
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/worldwise.git
+git clone https://github.com/mahmoud-alaa1/The-Wild-Oasis
 ```
 2. Navigate into the project directory:
 ```
-cd worldwise
+cd the-wild-oasis
 ```
 
 3. Install dependencies:
 ```
-npm install
+npm i
 ```
 
 ## 🔄 Usage
@@ -53,7 +59,7 @@ npm install
 ```
 npm run dev
 ```
-3. Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
+2. Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
 
 
 
