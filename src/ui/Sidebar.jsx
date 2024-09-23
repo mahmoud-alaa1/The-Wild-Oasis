@@ -5,8 +5,6 @@ import Uploader from "../data/Uploader";
 import { device, size } from "../utils/constants";
 import CloseSideBar from "./CloseSideBar";
 import { useEffect } from "react";
-import UserAvatar from "../features/authentication/UserAvatar";
-import HeaderMenu from "./HeaderMenu";
 import SidebarHeaderAndAvatar from "./SidebarHeaderAndAvatar";
 const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);

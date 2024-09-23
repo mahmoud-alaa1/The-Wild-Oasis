@@ -2,7 +2,6 @@ import styled from "styled-components";
 import HeaderMenu from "./HeaderMenu";
 import UserAvatar from "../features//authentication/UserAvatar";
 import { HiMenu } from "react-icons/hi";
-import Row from "../ui/Row";
 import OpenSideMenu from "./OpenSideMenu";
 const StyledHeader = styled.header`
   background-color: var(--color-grey-0);
