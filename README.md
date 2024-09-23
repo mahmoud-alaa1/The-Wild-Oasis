@@ -8,10 +8,10 @@ In a world full of noise, The Wild Oasis offers a peaceful user experience. Dive
 # 🖥️ Demo
 You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/).
 
-![image](https://github.com/user-attachments/assets/31a32b69-3e05-4d09-ac12-fede0cdb50e3)
-![image](https://github.com/user-attachments/assets/d35745ba-b109-4a59-90be-cbd8f3802c35)
-![image](https://github.com/user-attachments/assets/da1e7180-745b-4da3-918b-ecd0f64d3c40)
-![image](https://github.com/user-attachments/assets/9ec4ead5-f80c-43e6-ab1e-bf7eadeae4d3)
+![image](https://github.com/user-attachments/assets/172917e2-bbc4-49ae-b650-48e5f441f794)
+![image](https://github.com/user-attachments/assets/fb428bd7-b320-4860-85a6-3c2134abde20)
+![image](https://github.com/user-attachments/assets/0001dd9a-647c-4112-b247-e6fbfb93d536)
+![image](https://github.com/user-attachments/assets/3ad4c465-0c1f-44ea-98db-7d96fd1a1248)
 
   
 
