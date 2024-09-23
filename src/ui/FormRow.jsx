@@ -25,6 +25,7 @@ const StyledFormRow = styled.div`
     justify-content: flex-end;
     gap: 1.2rem;
   }
+  
 `;
 
 const Label = styled.label`
