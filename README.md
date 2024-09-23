@@ -1,6 +1,9 @@
 # 🏜️ The Wild Oasis
 
-Wild Oasis is a powerful, user-friendly dashboard designed to help you manage hotels, resorts, or cabin rentals with ease. Whether you manage a small number of cabins or a large property, Wild Oasis provides all the tools you need to handle bookings, guests, and daily operations effectively.
+🌿 A Journey Begins: The Idea Behind The Wild Oasis
+Every great project starts with a spark—a problem to solve or a concept to bring to life. For us, it was the idea of creating a seamless, scalable web application, one that merges beautiful design with robust functionality.
+
+In a world full of noise, The Wild Oasis offers a peaceful user experience. Dive into clean layouts, smooth animations, and a dark mode that soothes the eyes—because, after all, your journey through the web should be as calming as a walk through the desert at sunset.
 
 # 🖥️ Demo
 You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/).
@@ -10,10 +13,6 @@ You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/)
 ![image](https://github.com/user-attachments/assets/da1e7180-745b-4da3-918b-ecd0f64d3c40)
 ![image](https://github.com/user-attachments/assets/9ec4ead5-f80c-43e6-ab1e-bf7eadeae4d3)
 
-🌿 A Journey Begins: The Idea Behind The Wild Oasis
-Every great project starts with a spark—a problem to solve or a concept to bring to life. For us, it was the idea of creating a seamless, scalable web application, one that merges beautiful design with robust functionality.
-
-In a world full of noise, The Wild Oasis offers a peaceful user experience. Dive into clean layouts, smooth animations, and a dark mode that soothes the eyes—because, after all, your journey through the web should be as calming as a walk through the desert at sunset.
   
 
 # 🔥 The Core Technologies
