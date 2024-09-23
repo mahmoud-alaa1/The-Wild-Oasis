@@ -2,8 +2,7 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
 import Uploader from "../data/Uploader";
-import { device } from "../utils/constants";
-import { size } from "../utils/constants";
+import { device, size } from "../utils/constants";
 import { useOutsideClick } from "../hooks/useOutsideClick";
 import CloseSideBar from "./CloseSideBar";
 import { useEffect } from "react";
@@ -25,6 +24,7 @@ const StyledSidebar = styled.aside`
 `;
 
 function SideBar({ sideBarRef }) {
+  console.log(device.laptop);
   return (
     <StyledSidebar ref={sideBarRef}>
       <CloseSideBar sideBarRef={sideBarRef} />
