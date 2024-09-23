@@ -56,7 +56,7 @@ function SignupForm() {
       </FormRow>
 
       <FormRow
-        label="Password (min 8 characters)"
+        label={`Password \n (min 8 characters)`}
         error={errors.password?.message}
       >
         <Input
@@ -88,11 +88,11 @@ function SignupForm() {
 
       <FormRow>
         {/* type is an HTML attribute! */}
-        <Button variation="secondary" type="reset">
-          Reset
-        </Button>
         <Button disabled={isPending}>
           {isPending ? <SpinnerMini /> : "Create new user"}
+        </Button>
+        <Button variation="secondary" type="reset">
+          Reset
         </Button>
       </FormRow>
     </Form>

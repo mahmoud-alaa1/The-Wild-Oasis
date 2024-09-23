@@ -3,8 +3,8 @@ import { device } from "../utils/constants";
 const StyledFormRow = styled.div`
   display: flex;
   align-items: center;
-  gap: 2.4rem;
-  flex-wrap: wrap;
+  gap: 1.4rem;
+
   padding: 1.2rem 0;
 
   &:first-child {
@@ -24,6 +24,11 @@ const StyledFormRow = styled.div`
     justify-content: flex-end;
     gap: 1.2rem;
   }
+  @media ${"(max-width: 600px)"} {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 `;
 
 const Label = styled.label`
@@ -38,7 +43,11 @@ const Error = styled.span`
 function FormRow({ label, error, children }) {
   return (
     <StyledFormRow>
-      {label && <Label htmlFor={children.props.id}>{label}</Label>}
+      {label && (
+        <div style={{ width: `250px` }}>
+          <Label htmlFor={children.props.id}>{label}</Label>
+        </div>
+      )}
       {children}
       {error && <Error>{error}</Error>}
     </StyledFormRow>
