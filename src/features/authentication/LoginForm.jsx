@@ -18,7 +18,7 @@ function LoginForm() {
     background-color: #215cff11;
     border-radius: 1rem;
     padding: 1.5rem;
-    color: #002897c2;
+    color: var(--note-color);
     font-weight: 500;
   `;
 
