@@ -14,13 +14,15 @@ const StyledHeader = styled.header`
   gap: 1rem;
   align-items: center;
   @media ${"(max-width: 420px)"} {
-    flex-direction: column;
+    justify-content: end;
   }
 `;
 
 function Header({ sidebarRef }) {
   function openSideBar() {
-    sidebarRef.current.style.transform = "translateX(0)";
+    if (sidebarRef.current.style.transform === "translateX(-100%)")
+      sidebarRef.current.style.transform = "translateX(0)";
+    else sidebarRef.current.style.transform = "translateX(-100%)";
   }
 
   return (

@@ -5,6 +5,9 @@ import Uploader from "../data/Uploader";
 import { device, size } from "../utils/constants";
 import CloseSideBar from "./CloseSideBar";
 import { useEffect } from "react";
+import UserAvatar from "../features/authentication/UserAvatar";
+import HeaderMenu from "./HeaderMenu";
+import SidebarHeaderAndAvatar from "./SidebarHeaderAndAvatar";
 const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);
   padding: 3.2rem 4rem;
@@ -26,7 +29,7 @@ function Sidebar({ sidebarRef }) {
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth > Number(size.laptop)) {
-        sidebarRef.current.style = "";
+        sidebarRef.current.style.transform = "translateX(0)";
       }
     }
     window.addEventListener("resize", handleResize);
@@ -35,6 +38,7 @@ function Sidebar({ sidebarRef }) {
   return (
     <StyledSidebar ref={sidebarRef}>
       <CloseSideBar sidebarRef={sidebarRef} />
+      <SidebarHeaderAndAvatar />
       <Logo />
       <MainNav />
       {/* <Uploader /> */}

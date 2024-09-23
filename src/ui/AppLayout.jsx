@@ -33,7 +33,6 @@ const Note = styled.div`
   background-color: var(--note-background);
   color: var(--note-color);
   padding: 1.5rem;
-  font-size: 2rem;
 `;
 
 function AppLayout() {
