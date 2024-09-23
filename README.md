@@ -32,12 +32,11 @@ You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/)
 # ✨ Features
 
 - User Authentication: Secure login using Supabase.
-- Interactive Map: Explore locations in an intuitive interface.
 - Real-time Data: Dynamic content loading and caching using React Query.
 - Theming: Supports both light and dark modes.
 - Responsive Design: Mobile-friendly layout for all devices.
 - Forms: Easy-to-use forms with validation via React Hook Form.
-- Data Visualization: Display travel data in interactive charts.
+- Data Visualization: Display data in interactive charts.
 
 🛠️ Installation & Setup
 1. Clone the repository:
