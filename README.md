@@ -39,18 +39,18 @@ You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/)
 - Data Visualization: Display travel data in interactive charts.
 
 🛠️ Installation & Setup
-Clone the repository:
+1. Clone the repository:
 ```
 git clone https://github.com/your-username/the-wild-oasis.git
 cd the-wild-oasis
 ```
 
-Install dependencies:
+2. Install dependencies:
 
 ```
 npm i
 ```
-Set up supabase by creating supabase.js file then creating a supabase and finally export it to your project 
+3. Set up supabase by creating email at supabase and get your own URL and API KEY then integrate them in supabase.js file
 ```
 import { createClient } from "@supabase/supabase-js";
 
