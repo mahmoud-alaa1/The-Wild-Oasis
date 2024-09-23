@@ -44,6 +44,11 @@ function LoginForm() {
           {!isLogging ? "Login" : <SpinnerMini />}
         </Button>
       </FormRowVertical>
+      <div>
+        email: test@example.com
+        <br />
+        password: 12345678
+      </div>
     </Form>
   );
 }
