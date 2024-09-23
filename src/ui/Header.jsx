@@ -20,7 +20,10 @@ const StyledHeader = styled.header`
 
 function Header({ sidebarRef }) {
   function openSideBar() {
-    if (sidebarRef.current.style.transform === "translateX(-100%)")
+    if (
+      sidebarRef.current.style.transform === "translateX(-100%)" ||
+      sidebarRef.current.style.transform === ""
+    )
       sidebarRef.current.style.transform = "translateX(0)";
     else sidebarRef.current.style.transform = "translateX(-100%)";
   }
