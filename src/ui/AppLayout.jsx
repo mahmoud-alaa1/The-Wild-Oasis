@@ -30,7 +30,8 @@ const AppContainer = styled.div`
 
 const Note = styled.div`
   text-align: center;
-  background-color: aliceblue;
+  background-color: var(--note-background);
+  color: var(--note-color);
   padding: 1.5rem;
   font-size: 2rem;
 `;

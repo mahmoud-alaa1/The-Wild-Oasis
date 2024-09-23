@@ -5,9 +5,12 @@ const GlobalStyles = createGlobalStyle`
 
 
   &, &.light-mode{
+  --note-background:aliceblue;
+    --note-color: black;
+
   --image-grayscale: 0;
   --image-opacity: 100%;
-   --color-grey-0: #fff;
+  --color-grey-0: #fff;
   --color-grey-50: #f9fafb;
   --color-grey-100: #f3f4f6;
   --color-grey-200: #e5e7eb;
@@ -45,7 +48,8 @@ const GlobalStyles = createGlobalStyle`
   /* Grey */
  
   &.dark-mode{
-    
+  --note-background: black;
+  --note-color: #fff;
 --color-grey-0: #18212f;
 --color-grey-50: #111827;
 --color-grey-100: #1f2937;
