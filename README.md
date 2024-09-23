@@ -77,7 +77,7 @@ The dashboard provides real-time insights into:
   - `features/authentication/`
 - Cabin Management: Add, update, or remove cabins and manage their details.
   - `features/cabins/`
-Booking System: Track and manage all guest bookings.
+- Booking System: Track and manage all guest bookings.
   - `features/bookings/`
 - Dashboard: View stats, charts, and recent bookings.
   - `features/dashboard/`
