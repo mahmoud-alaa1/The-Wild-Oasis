@@ -1,14 +1,13 @@
 # 🏜️ The Wild Oasis
 
-The Wild Oasis is a full-stack React project showcasing my skills in modern web development. This app demonstrates my ability to build scalable, user-centric applications with advanced features and a clean, professional architecture. It includes powerful functionalities like authentication, real-time data interaction, and visualizations, wrapped in an intuitive, responsive UI with dark mode support.
+Welcome to The Wild Oasis! This is a hotel management web app, where hotel employees can manage cabins, bookings, and guests. It uses Supabase as the backend and implements advanced React techniques such as HOCs and React Query.
 
 # 🖥️ Demo
 You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/).
 
-![image](https://github.com/user-attachments/assets/172917e2-bbc4-49ae-b650-48e5f441f794)
-![image](https://github.com/user-attachments/assets/fb428bd7-b320-4860-85a6-3c2134abde20)
-![image](https://github.com/user-attachments/assets/0001dd9a-647c-4112-b247-e6fbfb93d536)
-![image](https://github.com/user-attachments/assets/3ad4c465-0c1f-44ea-98db-7d96fd1a1248)
+- Landing Page
+  
+![image](https://github.com/user-attachments/assets/6e0208b8-5183-49f3-80ca-8d35ce73c310)
 
   
 
@@ -33,26 +32,25 @@ You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/)
 # ✨ Features
 
 - User Authentication: Secure login using Supabase.
-- Interactive Map: Explore locations in an intuitive interface.
 - Real-time Data: Dynamic content loading and caching using React Query.
 - Theming: Supports both light and dark modes.
 - Responsive Design: Mobile-friendly layout for all devices.
 - Forms: Easy-to-use forms with validation via React Hook Form.
-- Data Visualization: Display travel data in interactive charts.
+- Data Visualization: Display data in interactive charts.
 
 🛠️ Installation & Setup
-Clone the repository:
+1. Clone the repository:
 ```
 git clone https://github.com/your-username/the-wild-oasis.git
 cd the-wild-oasis
 ```
 
-Install dependencies:
+2. Install dependencies:
 
 ```
 npm i
 ```
-Set up supabase by creating supabase.js file then creating a supabase and finally export it to your project 
+3. Set up supabase by creating email at supabase and get your own URL and API KEY then integrate them in supabase.js file
 ```
 import { createClient } from "@supabase/supabase-js";
 
