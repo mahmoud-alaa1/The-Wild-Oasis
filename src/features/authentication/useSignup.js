@@ -6,7 +6,6 @@ function useSignup() {
   const { mutate: signup, isPending } = useMutation({
     mutationFn: signupApi,
     onSuccess: (data) => {
-      console.log(data);
       toast.success(
         "Account is successfully created! Please verify the new account from the user's email address",
         {
