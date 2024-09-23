@@ -2,12 +2,9 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import SideBar from "./SideBar";
 import styled from "styled-components";
-
 const StyledAppLayout = styled.div`
-  display: grid;
+  display: flex;
   height: 100vh;
-  grid-template-columns: 26rem 1fr;
-  grid-template-rows: auto 1fr;
 `;
 
 const Main = styled.main`
@@ -24,16 +21,23 @@ const Contaienr = styled.div`
   gap: 3.2rem;
 `;
 
+const AppContainer = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+`;
 function AppLayout() {
   return (
     <StyledAppLayout>
-      <Header />
       <SideBar />
-      <Main>
-        <Contaienr>
-          <Outlet />
-        </Contaienr>
-      </Main>
+      <AppContainer>
+        <Header />
+        <Main style={{ flexGrow: 1 }}>
+          <Contaienr>
+            <Outlet />
+          </Contaienr>
+        </Main>
+      </AppContainer>
     </StyledAppLayout>
   );
 }
