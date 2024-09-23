@@ -74,16 +74,15 @@ The dashboard provides real-time insights into:
 
 ## 📂 Project Structure
 - Authentication: Handles login, signup, and user roles.
-  -features/authentication/
+  - `features/authentication/`
 - Cabin Management: Add, update, or remove cabins and manage their details.
-features/cabins/
-  - Booking System: Track and manage all guest bookings.
-  - features/bookings/
+  - `features/cabins/`
+Booking System: Track and manage all guest bookings.
+  - `features/bookings/`
 - Dashboard: View stats, charts, and recent bookings.
-  - features/dashboard/
+  - `features/dashboard/`
 - API Services: Backend integration for real-time data.
-  - services/
-
+  - `services/`
 
 
 ## 🤝 Contributing
