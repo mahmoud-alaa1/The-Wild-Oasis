@@ -18,7 +18,7 @@ const StyledDashboardLayout = styled.div`
 const TodayActivityAndDurationContainer = styled.div`
   display: flex;
   gap: 1.5rem;
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     flex-direction: column;
   }
 `;

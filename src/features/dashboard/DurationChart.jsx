@@ -16,7 +16,7 @@ const ChartBox = styled.div`
   border: 1px solid var(--color-grey-100);
   border-radius: var(--border-radius-md);
 
-  padding: 2.4rem 3.2rem;
+  padding: 2.4rem 1.5rem;
 
   & > *:first-child {
     margin-bottom: 1.6rem;
