@@ -31,14 +31,16 @@ You can check **live website** [The Wild Oasis](https://wild-oasis1.vercel.app/)
 
 # ✨ Features
 
-- User Authentication: Secure login using Supabase.
-- Real-time Data: Dynamic content loading and caching using React Query.
-- Theming: Supports both light and dark modes.
-- Responsive Design: Mobile-friendly layout for all devices.
-- Forms: Easy-to-use forms with validation via React Hook Form.
-- Data Visualization: Display data in interactive charts.
+- Cabin Management: Easily manage cabin availability and details.
+- Booking Management: Streamline the booking process and keep track of reservations.
+- User Management: Administer user roles and permissions efficiently.
+- Sales Statistics: Gain insights into sales data to make informed decisions.
+- Dark Mode: Enjoy a modern, customizable interface with dark mode support.
+- Authentication: Secure user access through integrated authentication.
+- Charts: Visualize data with integrated charts for better understanding.
+- Responsive Design: Ensures usability on various devices
 
-🛠️ Installation & Setup
+# 🛠️ Installation & Setup
 1. Clone the repository:
 ```
 git clone https://github.com/your-username/the-wild-oasis.git
@@ -68,7 +70,7 @@ Run and Test Project
 npm run dev
 ```
 
-## 🤝 🏖️ Contribute to the Oasis
+# 🤝 🏖️ Contribute to the Oasis
 We're excited for you to be a part of this journey. Whether you're fixing a bug or building new features, your contribution will help keep The Wild Oasis flourishing. Feel free to submit issues, pull requests or emailing me [Mahmoud Alaa](mailto:mahmoud.alaa.dev1@gmail.com?subject=[GitHub]%20Wild%20Oasis)
 
 
