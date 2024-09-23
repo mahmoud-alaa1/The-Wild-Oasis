@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import SideBar from "./SideBar";
+import Sidebar from "./Sidebar";
 import styled from "styled-components";
 import { useRef } from "react";
 const StyledAppLayout = styled.div`
@@ -30,7 +30,7 @@ function AppLayout() {
 
   return (
     <StyledAppLayout>
-      <SideBar sidebarRef={sidebarRef} />
+      <Sidebar sidebarRef={sidebarRef} />
       <AppContainer>
         <Header sidebarRef={sidebarRef} />
         <Main style={{ flexGrow: 1 }}>

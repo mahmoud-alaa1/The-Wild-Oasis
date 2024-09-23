@@ -22,7 +22,7 @@ const StyledSidebar = styled.aside`
   z-index: 5000;
 `;
 
-function SideBar({ sidebarRef }) {
+function Sidebar({ sidebarRef }) {
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth > Number(size.laptop)) {
@@ -42,4 +42,4 @@ function SideBar({ sidebarRef }) {
   );
 }
 
-export default SideBar;
+export default Sidebar;
