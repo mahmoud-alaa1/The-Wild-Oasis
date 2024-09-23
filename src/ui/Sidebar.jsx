@@ -17,7 +17,7 @@ const StyledSidebar = styled.aside`
     position: absolute;
     transform: translateX(-100%);
   }
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   z-index: 5000;
 `;
@@ -37,7 +37,7 @@ function SideBar({ sidebarRef }) {
       <CloseSideBar sidebarRef={sidebarRef} />
       <Logo />
       <MainNav />
-      <Uploader />
+      {/* <Uploader /> */}
     </StyledSidebar>
   );
 }

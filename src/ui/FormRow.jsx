@@ -7,6 +7,7 @@ const StyledFormRow = styled.div`
 
   padding: 1.2rem 0;
 
+  flex-wrap: wrap;
   &:first-child {
     padding-top: 0;
   }
@@ -24,7 +25,7 @@ const StyledFormRow = styled.div`
     justify-content: flex-end;
     gap: 1.2rem;
   }
-  @media ${"(max-width: 600px)"} {
+  @media ${"(max-width: 350px)"} {
     display: flex;
     flex-direction: column;
     align-items: start;

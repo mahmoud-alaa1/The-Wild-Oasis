@@ -8,8 +8,8 @@ const StyledCloseSideBar = styled(ButtonIcon)`
   @media ${device.laptop} {
     display: block;
     position: absolute;
-    top: 2%;
-    right: 2%;
+    top: 0.5%;
+    right: 0.5%;
   }
 `;
 
