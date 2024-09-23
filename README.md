@@ -18,16 +18,16 @@ In a world full of noise, The Wild Oasis offers a peaceful user experience. Dive
 
 # 🔥 The Core Technologies
 
-## <img src="https://github.com/user-attachments/assets/4579643d-5b77-4e0b-b320-be205fc587da" width="40" height="40"> React Query: Taming the Data Storm
+## <img src="https://github.com/user-attachments/assets/4579643d-5b77-4e0b-b320-be205fc587da" width="30" height="30">  React Query: Taming the Data Storm
 At the heart of our app lies React Query, a tool designed to handle data fetching and synchronization with effortless elegance. Imagine the Wild Oasis as a place where data flows like an untroubled stream, always fresh and ready when you need it.
 
-## <img src="https://github.com/user-attachments/assets/078dec5d-c427-4d18-b72c-c36b28491721" width="40" height="40"> Styled Components: Crafting the Perfect Look
+## <img src="https://github.com/user-attachments/assets/078dec5d-c427-4d18-b72c-c36b28491721" width="30" height="30">  Styled Components: Crafting the Perfect Look
 No oasis is complete without its lush beauty. Styled Components is how we bring style to life in our app, allowing us to effortlessly switch between light and dark modes, all while keeping our codebase tidy and maintainable.
 
-## <img src="https://github.com/user-attachments/assets/da054759-56f1-40c1-abac-34ab9e73e1c7" width="40" height="40"> React Hook Form: Building Interactions that Matter
+## <img src="https://github.com/user-attachments/assets/da054759-56f1-40c1-abac-34ab9e73e1c7" width="30" height="30">  React Hook Form: Building Interactions that Matter
 Forms are the lifeblood of any web app, and with React Hook Form, we've ensured that the experience is smooth, responsive, and intuitive. Every click, every input is handled with care to make sure users feel at ease as they interact with the app.
 
-## <img src="https://github.com/user-attachments/assets/ec9eda63-db63-4f73-99d5-931a1d340659" width="40" height="40"> Supabase: A Strong Foundation
+## <img src="https://github.com/user-attachments/assets/ec9eda63-db63-4f73-99d5-931a1d340659" width="30" height="30">  Supabase: A Strong Foundation
 Our backend is powered by Supabase, ensuring secure, reliable authentication and seamless data management. It's the engine that keeps our app running smoothly, making sure users can log in, save their data, and feel confident in their journey.
 
 ## 🏗️ The Compound Component Pattern: Advanced Building Blocks
