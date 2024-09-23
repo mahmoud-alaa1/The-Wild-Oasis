@@ -30,11 +30,11 @@ function Header({ sidebarRef }) {
 
   return (
     <StyledHeader>
+      <UserAvatar />
+      <HeaderMenu />
       <OpenSideMenu onClick={openSideBar}>
         <HiMenu />
       </OpenSideMenu>
-      <UserAvatar />
-      <HeaderMenu />
     </StyledHeader>
   );
 }
