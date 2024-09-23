@@ -3,6 +3,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import styled from "styled-components";
 import { useRef } from "react";
+
 const StyledAppLayout = styled.div`
   display: flex;
   height: 100vh;
@@ -11,6 +12,7 @@ const StyledAppLayout = styled.div`
 const Main = styled.main`
   background-color: var(--color-grey-50);
   padding: 4rem;
+  overflow: auto;
 `;
 
 const Contaienr = styled.div`
@@ -25,6 +27,14 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+const Note = styled.div`
+  text-align: center;
+  background-color: aliceblue;
+  padding: 1.5rem;
+  font-size: 2rem;
+`;
+
 function AppLayout() {
   const sidebarRef = useRef(null);
 
@@ -32,6 +42,10 @@ function AppLayout() {
     <StyledAppLayout>
       <Sidebar sidebarRef={sidebarRef} />
       <AppContainer>
+        <Note>
+          Data mutations (create, update, delete) are deactivated in this demo
+          app 🤗
+        </Note>
         <Header sidebarRef={sidebarRef} />
         <Main style={{ flexGrow: 1 }}>
           <Contaienr>

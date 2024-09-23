@@ -5,10 +5,22 @@ import Input from "../../ui/Input";
 import FormRowVertical from "../../ui/FormRowVertical";
 import useLogin from "./useLogin";
 import SpinnerMini from "../../ui/SpinnerMini";
+import styled from "styled-components";
 function LoginForm() {
   const [email, setEmail] = useState("test@example.com");
   const [password, setPassword] = useState("12345678");
   const { login, isLogging } = useLogin();
+
+  const AccountInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #215cff11;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: #002897c2;
+    font-weight: 500;
+  `;
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -44,11 +56,14 @@ function LoginForm() {
           {!isLogging ? "Login" : <SpinnerMini />}
         </Button>
       </FormRowVertical>
-      <div>
-        email: test@example.com
-        <br />
-        password: 12345678
-      </div>
+      <AccountInfo>
+        <div className="email">
+          email: <strong>test@example.com</strong>
+        </div>
+        <div className="password">
+          password: <strong>12345678</strong>
+        </div>
+      </AccountInfo>
     </Form>
   );
 }

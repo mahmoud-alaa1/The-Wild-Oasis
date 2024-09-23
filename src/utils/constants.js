@@ -2,7 +2,7 @@ export const PAGE_SIZE = 10;
 export const size = {
   mobileS: "320",
   mobileM: "375",
-  mobileL: "425",
+  mobileL: "440",
   tablet: "768",
   laptop: "1050",
   laptopL: "1440",
