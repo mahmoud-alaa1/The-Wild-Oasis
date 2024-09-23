@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {
-  HiOutlineCalendarDays,
+  HiMiniCalendar,
   HiOutlineCog6Tooth,
   HiOutlineHome,
   HiOutlineHomeModern,
@@ -19,12 +19,12 @@ const StyledNavLink = styled(NavLink)`
   &:visited {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1rem;
 
     color: var(--color-grey-600);
     font-size: 1.6rem;
     font-weight: 500;
-    padding: 1.2rem 2.4rem;
+    padding: 1.2rem 0;
     transition: all 0.3s;
   }
 
@@ -65,7 +65,7 @@ function MainNav() {
         </li>
         <li>
           <StyledNavLink to="/bookings">
-            <HiOutlineCalendarDays />
+            <HiMiniCalendar />
             <span>Bookings</span>
           </StyledNavLink>
         </li>
