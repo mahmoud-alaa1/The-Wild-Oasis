@@ -40,7 +40,7 @@ function SignupForm() {
         />
       </FormRow>
 
-      <FormRow label="Email address" error={errors.email?.message}>
+      <FormRow label="Email address" error={errors.email?.password}>
         <Input
           type="email"
           id="email"
